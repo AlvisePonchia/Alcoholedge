@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Tavernello"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/wine_review"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="right"
+                    android:text="5 stars"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/colour_name"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rosso"
+                    android:textSize="15dp"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/sparkling_or_still"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Liscio"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/alcohol_content"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="15°"
+                    android:textSize="15dp"
+                    android:gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</android.widget.RelativeLayout>
